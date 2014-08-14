@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFFFF"
+    >
+
+    
+    <TextView 
+       android:id="@+id/head_timeline"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/timeline"
+       android:textSize="16sp"
+       android:textColor="#FF000000"
+       android:gravity="right"        
+       android:layout_gravity="center_vertical"
+       android:paddingRight="5dp"
+    /> 
+    <ListView
+          android:id="@+id/lv"
+          android:layout_width="fill_parent"
+    	  android:layout_height="wrap_content"
+		  android:cacheColorHint="#fff"
+		  android:divider="@android:color/transparent"
+		  android:dividerHeight="10.0dp"
+		  android:fadingEdge="none"
+
+     />  
+</LinearLayout>
