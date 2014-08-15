@@ -32,9 +32,9 @@ public class GridViewTimeLineActivity extends Activity
 
 		tv_head = (TextView) this.findViewById(R.id.head_timeline);
 		listView = (ListView) this.findViewById(R.id.lv);
-		listView.setAdapter(new ListViewAdapter(this, timeMap, imageInfoMap));
+		listView.setAdapter(new ListViewAdapter(this, timeMap, imageInfoMap,this));
 
-		listView.setOnScrollListener(new OnScrollListener()
+		listView.setOnScrollListener(new OnScrollListener()	
 		{
 
 			@Override

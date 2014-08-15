@@ -19,7 +19,7 @@ public class GridViewAdapter extends BaseAdapter
 
 	private Context context;
 	private LayoutInflater layoutInflater;
-    String fileName;//以name存在目录中
+    String fileName;
 	private int size;
 
 	private Integer[] imgIds1 = { R.drawable.icon002, R.drawable.icon002, R.drawable.icon002};
@@ -70,8 +70,8 @@ public class GridViewAdapter extends BaseAdapter
 
 		ImageView iv;
 		if (convertView == null)
-		{	//加载一张图片，这里暂时是70dp x 70dp
-			convertView = layoutInflater.inflate(R.layout.gv_item, null);
+		{	
+			convertView = layoutInflater.inflate(R.layout.gv_item, null); 	//加载一张图片，这里暂时是70dp x 70dp
 		}
 		 fileName = getFileName();
 		iv = (ImageView) convertView.findViewById(R.id.image);
