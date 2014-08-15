@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, GridViewTimeLineActivity!</string>
     <string name="app_name">GridViewTimeLine</string>
+    <string name="description">描述一下吧</string>
 
 </resources>

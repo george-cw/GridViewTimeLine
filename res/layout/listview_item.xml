@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/image_green"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:src="@drawable/timeline_green" />
     
     <TextView
@@ -25,6 +25,7 @@
         android:id="@+id/gridview1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/image_green"
         android:layout_toRightOf="@+id/image_green"
@@ -37,6 +38,19 @@
         android:verticalSpacing="10dp" >
 	
     </com.buaa.ericsson.gridview.timeline.MyGridView>
-    
+
+    <com.buaa.ericsson.gridview.timeline.ClearEditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/image_green"
+        android:layout_below="@+id/TextView01"
+        android:drawableRight="@drawable/null_selector"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:hint="@string/description"
+        android:gravity="center_vertical"
+        android:singleLine="true" >
+    </com.buaa.ericsson.gridview.timeline.ClearEditText>
 
 </RelativeLayout>
